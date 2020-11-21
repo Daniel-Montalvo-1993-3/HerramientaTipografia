@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tipografia fluida</title>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <label for="fontMin">Fuente Minima en px</label>
+            <input type="number" id="fontMin" name="fontMin">
+        </div>
+        <div class="box">
+            <label for="fontMax">Fuente maxima en px</label>
+            <input type="number" id="fontMax" name="fontMax">
+        </div>
+        <div class="box">
+            <label for="sizeMin">Tamaño minimo en px</label>
+            <input type="number" id="sizeMin" name="sizeMin">
+        </div>
+        <div class="box">
+            <label for="sizeMax">Tamaño maximo en px</label>
+            <input type="number" id="sizeMax" name="sizeMax">
+        </div>
+        <div class="box-btn">
+            <button id="btnCalcular" class="btn-calcular">Calcular</button>
+            <div id="response">Resultado:</div>
+        </div>
+    </header>
+    <div class="boxText">
+        <h1 class="title">Texto Fluido con Clamp()</h1>
+        <p class="parrafo">Aquí, vamos a explorar una forma diferente de escalar linealmente el texto entre un conjunto
+            de tamaños mínimo y máximo a medida que aumenta el ancho de la ventana gráfica, con la intención de hacer
+            que su comportamiento en diferentes tamaños de pantalla sea más predecible: todo en una sola línea de CSS ,
+            gracias a clamp().</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
